@@ -1,0 +1,18 @@
+--- ../src-base/minecraft/net/minecraft/entity/item/EntityEnderCrystal.java
++++ ../src-work/minecraft/net/minecraft/entity/item/EntityEnderCrystal.java
+@@ -1,5 +1,6 @@
+ package net.minecraft.entity.item;
+ 
++import carpet.CarpetSettings;
+ import com.google.common.base.Optional;
+ import javax.annotation.Nullable;
+ import net.minecraft.entity.Entity;
+@@ -58,7 +59,7 @@
+         {
+             BlockPos blockpos = new BlockPos(this);
+ 
+-            if (this.field_70170_p.field_73011_w instanceof WorldProviderEnd && this.field_70170_p.func_180495_p(blockpos).func_177230_c() != Blocks.field_150480_ab)
++            if ((this.field_70170_p.field_73011_w instanceof WorldProviderEnd | CarpetSettings.crystalFireEverywhere) && this.field_70170_p.func_180495_p(blockpos).func_177230_c() != Blocks.field_150480_ab)
+             {
+                 this.field_70170_p.func_175656_a(blockpos, Blocks.field_150480_ab.func_176223_P());
+             }

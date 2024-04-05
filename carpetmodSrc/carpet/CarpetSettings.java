@@ -999,6 +999,9 @@ public class CarpetSettings
     @Rule(desc = "Removes tnt applying velocity to other entities.", category = CREATIVE)
     public static boolean removeTNTVelocity = false;
 
+    @Rule(desc = "End crystals create fire also in Overworld and Nether.", category = CREATIVE)
+    public static boolean crystalFireEverywhere = false;
+
     // ===== API ===== //
 
     /**
