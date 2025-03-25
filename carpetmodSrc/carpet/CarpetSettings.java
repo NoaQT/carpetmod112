@@ -257,6 +257,11 @@ public class CarpetSettings
     })
     public static boolean repeaterPoweredTerracotta = false;
 
+    @Rule(desc = "Pistons get addition block event delay depending on adjacent terracotta", category = {EXPERIMENTAL, CREATIVE}, extra = {
+            "1 to 15 bed added (1-15 block data), 0 (white) adds 100bed"
+    })
+    public static boolean pistonPoweredTerracotta = false;
+
     @Rule(desc = "Observer delays depends on stained hardened clay aka terracotta on which they are placed", category = {EXPERIMENTAL, CREATIVE}, extra = {
             "1 to 15 gt per delay added (1-15 block data), 0 (white) adds 100gt per tick"
     })
